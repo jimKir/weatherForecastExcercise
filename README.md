@@ -15,7 +15,7 @@ To regenerate all build files you need gulp-cli available in your command line a
 Test/Coverage report:
 Test/Client Coverage report:
 Documentation:
-Working Demo:
+Working Demo: https://wtrforecast.herokuapp.com/
 
 
 In total took around 5.5 hours mainly because of project setup issues.
