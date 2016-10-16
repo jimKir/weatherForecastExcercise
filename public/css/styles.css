@@ -1,0 +1,14 @@
+.weather-widget {
+  min-width: 320px;
+  font: 400 14px/1.4 Arial,sans-serif;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.img {
+  border: 0;
+  vertical-align: middle;
+}
+

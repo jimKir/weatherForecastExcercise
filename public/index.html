@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Weather forecast for fun</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<h1>Weather forecast</h1>
+<div ng-app="app">
+  <span ng-controller="ForecastCtrl" ng-init="find(city)" class="ng-cloak" ng-show="!!forecast.city.country"
+        class="weather-widget">
+    <h3> Show me weather forecast in UK city of <input ng-model="city"/> <button ng-click="find(city)">Load</button></h3>
+    <ul ng-repeat="now in forecast.now">
+       <li>
+          <span><img class="img" src="http://openweathermap.org/img/w/{{now.icon}}.png"> {{now.celcius}} °C  </span>
+          (<b>{{now.description}}</b>)
+          <div>
+             <span>Wind speed:</span>
+             <span> {{now.windSpeed}} m/s </span>
+          </div>
+          <div>
+             <span>Cloudness:</span>
+             <span>{{now.cloudPercentage}} %</span>
+          </div>
+          <small><span ng-bind="now.date | date:'EEEE HH a'"></span>
+          </small>
+       </li>
+    </ul>
+  </span>
+</div>
+<footer>
+  <h4>By Dimitrios K, just for fun :)</h4>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="controllers/forecast.controller.js"></script>
+</body>
+</html>
