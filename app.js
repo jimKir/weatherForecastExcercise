@@ -6,7 +6,7 @@ require('node-fetch');
 
 
 // Define the port to run on
-app.set('port', 3000);
+app.set('port', process.env.PORT || 5000);
 app.use(express.static(path.join(__dirname, 'public')));
 // Listen for requests
 app.use('/forecast', require('./server/routes/forecast.routes'));
