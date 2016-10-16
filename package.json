@@ -19,9 +19,6 @@
   ],
   "main": "",
   "scripts": {
-    "pre-commit": "./node_modules/.bin/gulp pre-commit"
-  },
-  "scripts": {
     "start": "node app.js"
   },
   "pre-commit": [
@@ -42,6 +39,7 @@
     "alight": "0.12.30 ",
     "angular": "1.5.8",
     "angular-mocks": "1.5.8",
+    "express": "^4.14.0",
     "jasmine-core": "~2.4.1",
     "request": "2.72.0",
     "whatwg-fetch": "^1.0.0"
@@ -54,7 +52,7 @@
     "chai": "3.5.0",
     "chai-as-promised": "6.0.0",
     "es6-promise": "4.0.5",
-    "express": "^4.13.3",
+    "express": "^4.14.0",
     "fetch-mock": "5.5.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
