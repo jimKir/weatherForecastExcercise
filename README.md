@@ -12,9 +12,8 @@ To regenerate all build files you need gulp-cli available in your command line a
  Or ie. "gulp test" independently.
  
 
-Test/Coverage report:
-Test/Client Coverage report:
-Documentation:
+Test/Coverage report: https://wtrforecast.herokuapp.com/lcov-report/index.html
+Test/Client Coverage report: https://wtrforecast.herokuapp.com/PhantomJS%202.1.1%20(Windows%207%200.0.0)/index.html
 Working Demo: https://wtrforecast.herokuapp.com/
 
 
@@ -27,3 +26,4 @@ If i had more time:
 Could have done better SOC(app,service,controller) for client web project setup.
 Could have added type assist on city input text and work on fancy styles and animations.
 If user types invalid city it  should be replaced by London wich is the default city the service returns either way.
+Add JSDocs comments to generate rich docs as you go

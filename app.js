@@ -8,6 +8,8 @@ require('node-fetch');
 // Define the port to run on
 app.set('port', process.env.PORT || 5000);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'coverage')));
+app.use(express.static(path.join(__dirname, 'build/coverage')));
 // Listen for requests
 app.use('/forecast', require('./server/routes/forecast.routes'));
 app.listen(app.get('port'), function() {
