@@ -1,8 +1,6 @@
 
 To run the app:
 
-"npm install -g npm" (optional)
-
 "npm install"  
 
 "node app.js"
